@@ -1,0 +1,12 @@
+name: FancyHUD
+version: '${version}'
+main: com.daxton.fancyhud.FancyHUD
+api-version: 1.13
+prefix: FancyHUD
+softdepend: [ FancyCore ]
+authors: [ s99889989 ]
+description: Customize the HUD display on the mod side.
+commands:
+  fancyhud:
+    description: Basic instructions.
+    aliases: fhud
