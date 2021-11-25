@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.daxton'
-version = '1.0'
+version = '1.0.1'
 
 repositories {
     mavenCentral()
@@ -20,7 +20,7 @@ repositories {
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
 
-    compileOnly fileTree(dir: 'lib', include: ['FancyCore-1.2.4.jar'])
+    compileOnly fileTree(dir: 'lib', include: ['FancyCore-1.2.3.jar'])
 }
 
 def targetJavaVersion = 8
@@ -51,7 +51,7 @@ processResources {
 
 task copyJar1(type: Copy) {
     from jar
-    into 'C:/Users/Gary/Desktop/PluginServer/1.16.5/plugins'
+    into 'C:/Users/Gary/Desktop/PluginServer/1.17.1/plugins'
 }
 
 task copyJar2(type: Copy) {

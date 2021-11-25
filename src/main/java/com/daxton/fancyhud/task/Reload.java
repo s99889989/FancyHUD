@@ -8,7 +8,8 @@ public class Reload {
     public static void execute(){
         //設定檔
         FileConfig.reload();
-
+        //定時任務
+        RunTask.execute();
     }
 
 }
