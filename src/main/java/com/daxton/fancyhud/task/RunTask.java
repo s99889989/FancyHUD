@@ -47,7 +47,7 @@ public class RunTask {
 				Bukkit.getOnlinePlayers().forEach(RunTask::sendHubJson);
 			}
 		};
-		bukkitRunnable.runTaskTimer(FancyHUD.fancyHUD, 0, 20L * refresh_time);
+		bukkitRunnable.runTaskTimer(FancyHUD.fancyHUD, 0, refresh_time); //20L *
 
 	}
 
@@ -97,7 +97,7 @@ public class RunTask {
 			}
 
 		}
-		ClientConnect.sendMessage(player, "showhub", JsonCtrl.writeJSON(hubJson));
+		ClientConnect.sendMessage(player, "ShowHUD", JsonCtrl.writeJSON(hubJson));
 	}
 
 }
